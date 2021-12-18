@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+a {
+text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero{
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/img1.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+#hero::after{
+    content: "";
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 80%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: rgb(216, 238, 15);
+}
+#hero.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: red;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: .1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+}
+#hero .cta:hover{
+    color: black;
+    background-color: beige;
+    width: fit-content;
+    display: inline-block;
+    padding: 10px 30px;
+}
+#services {
+}
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#services .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    text-align: center;
+}
+#services .section-title span{
+    color: crimson;
+}
+#services .service-top p{
+    font-size: 2rem;
+    margin: 5px;
+    line-height: 5px;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+#services .service-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#services .service-items{
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 4px;
+    background-image: url(./img/img7.png);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+}
+#services .service-items::after {
+    content: " ";
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+}
+#services .service-bottom .icon{
+    height: 1px;
+    width: 1px;
+    margin-bottom: 20px;
+}
+#services .service-items h2 {
+    font-size: 2rem;
+    color: crimson;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#services .service-items p{
+    color: orange;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+#services .service-bottom .icon img {
+height: 100%;
+width: 100%;
+object-fit: cover;
+} 
+#About .About{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px;
+}
+#About .col-left{
+    width: 250px;
+    height: 360px;
+}
+#About .col-right{
+    width: 100%;
+}
+#About .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+#About .col-right p{
+    margin-bottom: 20px;
+    justify-self: auto;
+}
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin:auto;
+}
+#contact .contact-items{
+    width: 500px;
+}
+#contact .contact-items{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0 orange;
+    transition: .3s ease box-shadow;
+}
+#contact .icon{
+    width: 80px;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+#contact .contact-info h1{
+    font-size: small;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#contact .contact-info p{
+    font-size: large;
+    font-weight: 300;
+    line-height: 2rem;
+}
